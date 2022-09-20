@@ -1,17 +1,14 @@
-let str="madam"
-
-function reverse(string){
-let bag="";
- for(let i= string.length-1; i>=0;i--){
-      bag=bag+string[i];
-       }
-     return bag;
- }
-
-let rev_str= reverse(str);
-
-if(str==rev_str){
-    console.log("Pallindrome");
-   }else{
-      console.log("NA);
+function palindrome(str){
+  let bag="";
+  for(let i=str.length-1;i>=0;i--){
+    bag=bag+str[i];
+  }
+  if(bag==str){
+    console.log("yes");
+  }
+  else{
+    console.log("no");
+  }
+ 
 }
+palindrome("rasie");
